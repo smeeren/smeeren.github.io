@@ -1,0 +1,7 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>yes.</h1>
+<a href="althistory/main.html">Alternate History/Speculative Fiction</a>
+</body>
+</html>
