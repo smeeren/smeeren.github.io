@@ -40,9 +40,13 @@ document.getElementById("output").style.fontSize = x;
 <script>
 function copyImg() {
 
-alert("A");
-<!-- var cvs = html2canvas(document.getElementById("output"));-->
-<!-- Canvas2Image.saveAsPNG(cvs);-->
+<!-- alert("A"); -->
+
+html2canvas(document.querySelector("#output")).then(cvs => {
+    document.body.appendChild(cvs);
+});
+
+Canvas2Image.saveAsPNG(cvs, document.getElementById("output").width, document.getElementById("output").height);
 
 }
 </script>
