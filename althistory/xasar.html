@@ -37,6 +37,15 @@ var x = document.getElementById("fsize").value+"px";
 document.getElementById("output").style.fontSize = x;
 }
 </script>
+<script>
+function copyImg() {
+
+var cvs = html2canvas(document.getElementById("output"));
+Canvas2Image.saveAsPNG(cvs);
+
+}
+</script>
+
 
 </head>
 
@@ -63,11 +72,11 @@ document.getElementById("output").style.fontSize = x;
 <input id="fsize" type="number" min="20" max="100" step="5" onchange="fontOut()">
 	</div>
 	<div>
-<button>Copy Image (coming soon!)</button>
+<button>Copy Image</button>
 	</div>
 </div>
 
-<pre id="output" style="font-family:XasarF; font-size:40px; width:400px; border: 1px solid black; overflow-wrap: anywhere; white-space: pre-line; padding: 5px; margin: 0px;"></pre>
+<pre id="output" style="font-family:XasarF; font-size:40px; width:400px; border: 1px solid black; overflow-wrap: anywhere; white-space: pre-line; padding: 5px; margin: 0px;">ओं</pre>
 
 
 
