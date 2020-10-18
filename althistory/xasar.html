@@ -42,11 +42,11 @@ function copyImg() {
 
 <!-- alert("A"); -->
 
-html2canvas(document.querySelector("#output")).then(cvs => {
+html2canvas(document.getElementById("output")).then(cvs => {
     document.body.appendChild(cvs);
 });
 
-Canvas2Image.saveAsPNG(cvs, document.getElementById("output").width, document.getElementById("output").height);
+Canvas2Image.saveAsPNG(cvs, cvs.width, cvs.height);
 
 }
 </script>
