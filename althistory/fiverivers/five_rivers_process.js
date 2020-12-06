@@ -42,7 +42,36 @@ function process(input) {
 	return [coords, substrings]
 }
 
+//transliterate each word to special unicode
+function syllToChar (coords)
+{
+	out = ""
+	for (let coord of coords) {
+		//max 9892, w/ coord (14,27); 420 distinct chars
+		//each coord[0] (initial) can be followed by 28 finals, base 28 number system
+		charID_dec = 9472 + 28*coord[0] + coord[1] 
+		out = out.concat(String.fromCodePoint(charID_dec))
+		console.log(String.fromCodePoint(charID_dec))
+	}
+	return out
+}
+
+//process a paragraph, transliterating each subunit and breaking at spaces or periods
+function processParagraph (text) {
+
+	sentences_raw = text.split(".")
+	sentences_translit = []
+	for (let sentence of sentences_raw) {
+		coords = process(sentence)[0]
+		transliteration = syllToChar(coords)
+		sentences_translit.push(transliteration)
+	}
+	
+	out = sentences_translit.join('\u3000');
+	return out
+}
+
 //publish results to output
 function upOut() {
-document.getElementById("output").innerHTML = process(document.getElementById("input").value)[1]
+	document.getElementById("output").innerHTML = processParagraph(document.getElementById("input").value)
 }
