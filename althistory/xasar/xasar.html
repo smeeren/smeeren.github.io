@@ -25,31 +25,7 @@ function upOut() {
 document.getElementById("output").innerHTML = document.getElementById("input").value;
 }
 </script>
-<script>
-function widthOut() {
-var x = document.getElementById("wout").value+"px";
-document.getElementById("output").style.width = x;
-}
-</script>
-<script>
-function fontOut() {
-var x = document.getElementById("fsize").value+"px";
-document.getElementById("output").style.fontSize = x;
-}
-</script>
-<script>
-function copyImg() {
-
-//alert("A");
-
-html2canvas(document.getElementById("output")).then(cvs => {
-    document.body.appendChild(cvs);
-});
-
-Canvas2Image.saveAsPNG(cvs, cvs.width, cvs.height);
-
-}
-</script>
+<script src="../output_customization.js"></script>
 </head>
 
 <body>
