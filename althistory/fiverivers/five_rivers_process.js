@@ -51,7 +51,13 @@ document.getElementById("output").innerHTML = process(document.getElementById("i
 function widthOut() {
 let x = document.getElementById("wout").value+"px";
 document.getElementById("output").style.width = x;
-document.getElementById("flex-container").style.width = x;
+
+// Get the root element
+var r = document.querySelector(':root');
+r.style.setProperty('--width', x);
+/*var rs = getComputedStyle(r);
+  alert("The value of --blue is: " + rs.getPropertyValue('--blue'));
+}*/
 }
 
 //change font size
