@@ -55,9 +55,10 @@ document.getElementById("output").style.width = x;
 // Get the root element
 var r = document.querySelector(':root');
 r.style.setProperty('--width', x);
-/*var rs = getComputedStyle(r);
-  alert("The value of --blue is: " + rs.getPropertyValue('--blue'));
-}*/
+
+var rs = getComputedStyle(r);
+alert("The value of --width is: " + rs.getPropertyValue('--width'));
+
 }
 
 //change font size
