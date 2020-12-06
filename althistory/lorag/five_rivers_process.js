@@ -56,7 +56,7 @@ function syllToChar (coords)
 	return out
 }
 
-//process a paragraph, transliterating each subunit and breaking at spaces or periods
+//process a paragraph, transliterating each subunit (run the subunits are sentences; broken at periods)
 function processParagraph (text) {
 
 	sentences_raw = text.split(".")
