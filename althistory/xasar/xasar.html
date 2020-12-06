@@ -4,7 +4,7 @@
 <head>
 
 <title>Xasar Script | White Huns</title>
-
+<p><a href="../main.html">Go back to Althist/Specfic</a></p>
 <style>
 @font-face {
 font-family: XasarF;
@@ -14,7 +14,7 @@ src: url(Xasar-Regular.otf) format("opentype"), url(Xasar-Regular.ttf) format("t
 .flex-container {
 display: flex;
 flex-flow: row wrap;
-justify content: center;
+justify-content: center;
 width: 400px;
 }
 
@@ -40,7 +40,7 @@ document.getElementById("output").style.fontSize = x;
 <script>
 function copyImg() {
 
-<!-- alert("A"); -->
+//alert("A");
 
 html2canvas(document.getElementById("output")).then(cvs => {
     document.body.appendChild(cvs);
@@ -50,8 +50,6 @@ Canvas2Image.saveAsPNG(cvs, cvs.width, cvs.height);
 
 }
 </script>
-
-
 </head>
 
 <body>

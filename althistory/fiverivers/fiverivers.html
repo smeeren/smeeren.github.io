@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Five Rivers Script | Lands of Red and Gold</title>
+<p><a href="../main.html">Go back to Althist/Specfic</a></p>
+
+<!-- CSS specifications -->
+<style>
+@font-face {
+font-family: XasarF;
+src: url(Xasar-Regular.otf) format("opentype"), url(Xasar-Regular.ttf) format("truetype");
+}
+
+.flex-container {
+display: flex;
+flex-flow: row wrap;
+justify-content: center;
+width: 400px;
+}
+</style>
+
+<!--JavaScript specifications-->
+<script src="five_rivers_process.js"></script>
+
+</head>
+
+<body>
+
+<h1>Five Rivers Script | Lands of Red and Gold</h1>
+<img src="xasarla.png" alt="Khazar script sample" width="97" height="50">
+<ul> full script:
+<li><a href="page1.jpg">page 1</a></li>
+<li><a href="page2.jpg">page 2</a></li>
+</ul>
+<h3>Input</h3>
+<textarea id="input" rows="4" cols = "50" oninput="upOut()"></textarea>
+
+<h3>Output</h3>
+
+<div class="flex-container">
+	<div>
+<label for="wout">Display Width:</label>
+<input id="wout" type="number" min="100" max="1000" step="100" onchange="widthOut()">
+	</div>
+	<div>
+<label for="fsize">Font Size:</label>
+<input id="fsize" type="number" min="20" max="100" step="5" onchange="fontOut()">
+	</div>
+	<div>
+<button onclick="copyImg()">Copy Image</button>
+	</div>
+</div>
+
+<pre id="output" style="font-family:XasarF; font-size:40px; width:400px; border: 1px solid black; overflow-wrap: anywhere; white-space: pre-line; padding: 5px; margin: 0px;">ओं</pre>
+
+
+
+</body>
+</html>
