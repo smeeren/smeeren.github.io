@@ -51,6 +51,7 @@ document.getElementById("output").innerHTML = process(document.getElementById("i
 function widthOut() {
 let x = document.getElementById("wout").value+"px";
 document.getElementById("output").style.width = x;
+document.getElementById("flex-container").style.width = x;
 }
 
 //change font size
