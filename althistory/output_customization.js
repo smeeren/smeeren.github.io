@@ -20,14 +20,14 @@ function fontOut() {
 	
 //screenshot of output
 function copyImg() {
-	
-	//alert("A");
-	
-	html2canvas(document.getElementById("output")).then(cvs => {
-		document.body.appendChild(cvs);
+	//trad. JS to select an element, and to append it to DOM
+	var old_canvas = document.getElementById("canvas");
+	if (old_canvas !== null) {
+		old_canvas.remove();
+	}
+	html2canvas(document.querySelector("#output")).then(canvas => {
+		document.querySelector("#output").parentNode.insertBefore(canvas, document.querySelector("#output").nextSibling);
+		canvas.id = "canvas"
 	});
-	
-	Canvas2Image.saveAsPNG(cvs, cvs.width, cvs.height);
-	
+	//saveAsPNG(canvas, canvas.width, canvas.height);
 }
-	
