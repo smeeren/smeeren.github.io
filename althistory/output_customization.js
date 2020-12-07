@@ -26,7 +26,7 @@ function copyImg() {
 		old_canvas.remove();
 	}
 	html2canvas(document.querySelector("#output")).then(canvas => {
-		document.querySelector("#output").parentNode.insertBefore(canvas);
+		document.querySelector("#output").parentNode.insertBefore(canvas, document.querySelector("#output").nextSibling);
 		canvas.id = "canvas"
 	});
 	//saveAsPNG(canvas, canvas.width, canvas.height);
