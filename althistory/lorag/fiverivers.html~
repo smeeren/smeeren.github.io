@@ -29,10 +29,10 @@ src: url(Xasar-Regular.otf) format("opentype"), url(Xasar-Regular.ttf) format("t
 <body>
 
 <h1>Five Rivers Script | Lands of Red and Gold</h1>
-<img src="../xasar/xasarla.png" alt="Khazar script sample" width="97" height="50">
+<img src="xasarla.png" alt="Khazar script sample" width="97" height="50">
 <ul> full script:
-<li><a href="../xasar/page1.jpg">page 1</a></li>
-<li><a href="..xasar/page2.jpg">page 2</a></li>
+<li><a href="page1.jpg">page 1</a></li>
+<li><a href="page2.jpg">page 2</a></li>
 </ul>
 <h3>Input</h3>
 <textarea id="input" rows="4" cols = "50" oninput="upOut()"></textarea>
