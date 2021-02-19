@@ -1,0 +1,43 @@
+extends index
+
+block extrahead
+  link(href="/stylesheets/output_styling.css" rel="stylesheet")
+//-h1= title
+  p Welcome to #{title}
+
+block content
+  .contentspacer
+    block althistblurb
+      .container-fluid 
+        .row 
+          .col-sm-2
+            h1 Xasar Script
+          .col-sm-3 
+            img(src="/images/xasarla.png" alt="Khazar script sample" width="97" height="50")
+            ul full script: 
+              li
+                a(href="/images/page1.jpg") page 1
+              li
+                a(href="/images/page2.jpg") page 2
+    h3 Input 
+    textarea(id="input" rows="4" cols = "50") ओं
+    h3 Output 
+    .container(id="outputcontainer")
+      .row
+        .col-sm-3 
+          label(for="wout") Display Width: 
+          input(id="wout" type="number" min="100" max="1000" step="100" value=400)
+        .col-sm-3 
+          label(for="fsize") Font Size:
+          input(id="fsize" type="number" min="20" max="100" step="5" value=40)
+        .col-sm-3 
+          button(id="copybutton") Copy Image 
+      pre(id="output")
+  script(src="/javascripts/html2canvas.js")
+  script(src="/javascripts/canvas2image.js")
+  script(src="/javascripts/output_customization.js")
+  block althistscripts
+    
+
+block footer 
+  a(href="/althistory") Go back to Althist/Specfic

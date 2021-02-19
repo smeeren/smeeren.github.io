@@ -1,0 +1,23 @@
+@font-face {
+	font-family: XasarF;
+	src: url(/fonts/Xasar-Regular.otf) format("opentype"), url(/fonts/Xasar-Regular.ttf) format("truetype");
+}
+:root {
+	--width: 400px;
+}
+.flex-container {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	width: var(--width);
+}
+output {
+	font-family : XasarF;
+	font-size : 40px; 
+	width:400px; 
+	border: 1px solid black; 
+	overflow-wrap: anywhere; 
+	white-space: pre-line; 
+	padding: 5px; 
+	margin: 0px;
+}

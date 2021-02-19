@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Philosopher&display=swap");
+
+a:link { 
+	text-decoration: none;
+}
+.headerlink {
+	text-align: right;
+	font-family: 'Philosopher', cursive;
+	color: black;
+}
+.banner {
+	margin-top: 2em;
+	border-bottom: 1px solid #469ea8;
+	margin-bottom: 1.5em;
+	padding-bottom: 0.5em;
+}
+.contentspacer {
+	padding-left: 20px
+}

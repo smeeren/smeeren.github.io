@@ -1,0 +1,13 @@
+extends index
+
+block content 
+  div.contentspacer
+    h3 Simple Raytracing/Raycasting.
+    p This project is a simple demonstration of using data derived from a 2-dimensional coordinate space (distance from an object) and an assumption about its height to determine what the object would look like in a 3D view.
+    | Based on the example in 
+    a(href="https://www.youtube.com/watch?v=rdGKg6VbFBo&list=PLOjd6kFr4qADy5huf3Vzz0aNU41qXUU6C") this video series 
+    | but reimplemented in vanilla JS.
+    | Select the canvas to pass keyboard input: Left or A to turn left, Right/D to turn right.
+    canvas(id="viewfield" width=640 height=360 tabindex=1)
+    script(src="/javascripts/heronmodule.js")
+    script(src="/javascripts/raycaster.js")

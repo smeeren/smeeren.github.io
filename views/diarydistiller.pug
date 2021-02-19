@@ -1,0 +1,11 @@
+extends index 
+
+block content 
+  h3 Natural Language Processing: Sentiment Analysis
+  p This NLP model was made in Tensorflow and trained with a modified version of the Yelp reviews dataset.
+  | The model is hosted on a Heroku app, this page is just a way to send and receive HTTP requests.
+  textarea(id="input" rows="4" cols = "50") some sample text that works really well
+  p The output is expressed as 2 continuous indices: Happiness, and Satisfaction.
+  pre(id="output")
+  script(src="/javascripts/tokenizer.js")
+  script(src="/javascripts/diarydistiller.js")
