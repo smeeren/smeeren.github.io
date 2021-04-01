@@ -1,0 +1,30 @@
+extends index
+
+block extrahead
+  link(rel='stylesheet' href='/stylesheets/style.css')
+//-h1= title
+  p Welcome to #{title}
+
+block content
+  embed(src="Boopala_Arul_CV.pdf", style="width : 100%; height : 40vw")
+//-     .row
+//-       .col-md-2
+//-       .col-md-8 
+//-         .row 
+//-           .col-md-4 
+//-             a(href="/althistory")
+//-               h5.headerlink Fonts, Transliteration 
+//-               img.menu(src="images/maikop_kuraarax.png")
+//-           .col-md-4 
+//-             a(href="/animations")
+//-               h5.headerlink Visualizations, Games 
+//-               img.menu(src="images/Weaving-Abstraction_51.jpg")
+//-           .col-md-4 
+//-             a(href="/demos")
+//-               h5.headerlink Machine Learning Demos 
+//-               img.menu(src="images/boxplot.png")
+//-   script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous")
+//-   script(src="javascripts/bootstrap.min.js")
+
+block footer 
+  //-div.footerfill

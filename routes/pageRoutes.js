@@ -7,6 +7,9 @@ var router = express.Router();
 router.get('/', function(req, res, next) {
   res.render('homepage', { title: 'Website of Boopala Arul' });
 });
+router.get('/resume', function(req, res, next) {
+	res.render('resume', { title: 'Resume | Boopala Arul' });
+});
 
 router.get('/althistory', function(req, res, next) {
   res.render('althistmain', { title: 'AltHist/SpecFic Projects | Boopala Arul' });
